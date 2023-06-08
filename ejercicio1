@@ -40,6 +40,7 @@ while opcion<4 or opcion>0:
             print("El texto no es palindromo!")
         break
     if opcion == 4:
-        print("Usted a seleccionado la OPCION 4")
-        # Aqui el codigo
+        print("Usted a salido del programa")
+        print("¡Gracias por acceder!")
+        print("AUTORES: Antonio Campos & Alonso Cruz")
         break
