@@ -11,10 +11,12 @@ while opcion<4 or opcion>0:
     if opcion==1:
         print("Usted a seleccionado la OPCION 1")
         num=int(input("Ingrese numero entre 1 y 15: "))
+        
         if num%2==0:
             print("El número no es primo")
         else:
             print("El número es primo")
+        
         break
     if opcion == 2:
         print("Usted a seleccionado la OPCION 2")
@@ -22,7 +24,18 @@ while opcion<4 or opcion>0:
         break
     if opcion == 3:
         print("Usted a seleccionado la OPCION 3")
-        # Aqui el codigo
+        palindromo = True
+        texto = input("Ingrese la palabra que desea evaluar: ")
+
+        for i in range(len(texto)//2):
+            if texto[i].lower() != texto[-i-1].lower():
+                palindromo = False
+            break
+
+        if palindromo:
+            print("El texto es palindromo!")
+        else:
+            print("El texto no es palindromo!")
         break
     if opcion == 4:
         print("Usted a seleccionado la OPCION 4")
