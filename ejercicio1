@@ -13,7 +13,7 @@ while opcion<4 or opcion>0:
         print("Usted a seleccionado la OPCION 1")
         while num<1 or num>15:
             num=int(input("Ingrese numero entre 1 y 15: "))
-        
+            print("debe ser entre 1 y 15")
         if num%2==0:
             print("El número no es primo")
         else:
